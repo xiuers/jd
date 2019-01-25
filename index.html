@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- 语言改成中文cn -->
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 1. 添加了视口 只要是移动端都需要添加视口 -->
+    <meta name="viewport" content="width=device-width, user-scalable=no,
+     initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>京东移动端主页</title>
+    <!-- 1. 引入主页的index.less文件  注意rel="stylesheet/less"-->
+    <link rel="stylesheet/less" href="less/index.less">
+    <!-- 2. 引入一个less.js的编译器文件 -->
+    <script src="./lib/less/less.js"></script>
+</head>
+
+<body>
+    <!-- 头部区域 推荐使用id容器 -->
+    <header id="header">
+        <a href="#" class="icon-logo">
+        </a>
+        <form action="#">
+            <i class="icon-search"></i>
+            <!-- 可以让输入法键盘右下角的文字变成搜素 点击输入法右下角的搜素按钮 提交表单 -->
+            <input type="search" placeholder="请输入要搜素的商品">
+        </form>
+        <a href="#" class="login">登录</a>
+    </header>
+    <!-- 轮播图区域 -->
+    <section id="slide">
+        <img src="./images/l1.jpg" alt="">
+    </section>
+    <!-- 导航条区域 -->
+    <nav id="nav">
+        <ul>
+            <!-- li*8>a[href="#"]>img[src="images/nav$.png"]+p{京东导航} -->
+            <li>
+                    <a href="#">
+                        <img src="images/nav0.png" alt="">
+                        <p>京东导航</p>
+                    </a>
+                </li>
+            <li>
+                <a href="#">
+                    <img src="images/nav1.png" alt="">
+                    <p>京东导航</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/nav2.png" alt="">
+                    <p>京东导航</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/nav3.png" alt="">
+                    <p>京东导航</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/nav4.png" alt="">
+                    <p>京东导航</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/nav5.png" alt="">
+                    <p>京东导航</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/nav6.png" alt="">
+                    <p>京东导航</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/nav7.png" alt="">
+                    <p>京东导航</p>
+                </a>
+            </li>
+           
+        </ul>
+    </nav>
+    <!-- 主体商品区域 -->
+    <main id="main">
+        <!-- 秒杀 -->
+        <section class="seckill"></section>
+        <!-- 京东超市 -->
+        <section class="jd-market"></section>
+    </main>
+    <!-- 底部区域 -->
+    <footer id="footer"></footer>
+    <!-- 3. 引入主页的index.js文件 -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>
